@@ -34,40 +34,14 @@ cd src/Demo.Products.API
     http://localhost:5038/swagger/index.html
 
 ## Tasks
-1.  Create a new MVC project with entity framework ✅
-
-2.  Add Entity Framework scaffold from DB ✅
-
-3.  Recreate Models & Controllers ✅
-
-4.  Add Open API Generatror / SwaggerGen ✅
-
-5.  Error Handling ✅
-
-6.  Ensure every endpoint has been recreated ✅
-    -  Products ✅
-    -  ProductOptions ✅
-
-7.  Integration Tests
-    -  Get & Create  ✅
-    -  Authorization once implemented [ToDo]
-
-8.  Unit Tests
-    - All CRUD endpoints with In-Memory DB [ToDo]
-
-9.  Complete Open API spec with futher Swagger Attributes [ToDo]
-
-10.  Authentication & Authorization [ToDo]
-
-11.  Report Metrics [ToDo]
-
-12.  Move database into it's own container ✅
-
-13.  Refactor database to MySql 
-     - Configuration, Queries & Commands ✅
-     - Script initial EF Migration [ToDo]
-
-14.  Build and Test in Github Actions [Todo]
-
-15.  Documentation ✅
-
+1.  Script intial EF Migration
+2.  Authentication & Authorization
+3.  Healthchecks
+4.  Metrics
+5.  Integration Tests
+    -  Get All Products  ✅
+    -  Authorization once implemented 
+6.  Build and Test in Github Actions 
+7.  Unit Tests
+    - All CRUD endpoints with In-Memory DB 
+7.  Complete Open API spec with futher Swagger Attributes 
