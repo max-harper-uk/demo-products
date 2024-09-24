@@ -1,0 +1,31 @@
+# Comments are provided throughout this file to help you get started.
+# If you need more help, visit the Docker Compose reference guide at
+# https://docs.docker.com/go/compose-spec-reference/
+
+# Here the instructions define your application as a service called "server".
+# This service is built from the Dockerfile in the current directory.
+# You can add other services your application may depend on here, such as a
+# database or a cache. For examples, see the Awesome Compose repository:
+# https://github.com/docker/awesome-compose
+services:
+  products-api:
+    container_name: products-api
+    build:
+      context: ./src/
+      dockerfile: /Demo.Products.API/Dockerfile
+      target: final
+    ports:
+      - 8080:8080
+  products-db:
+    container_name: products-db
+    image: mysql:9.0.1
+    volumes:
+      - products-db-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: MySuperSecretPassword
+      MYSQL_DATABASE: products
+    ports:
+      - "3306:3306"
+
+volumes:
+  products-db-mysql-data:
