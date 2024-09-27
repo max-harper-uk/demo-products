@@ -34,7 +34,7 @@ cd src/Demo.Products.API
     http://localhost:5038/swagger/index.html
 
 ## Tasks
-1.  Script intial EF Migration
+1.  Script intial EF Migration ✅
 2.  Authentication & Authorization
 3.  Healthchecks
 4.  Metrics
